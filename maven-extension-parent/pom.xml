@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.sikejava.framework.parent</groupId>
+        <artifactId>sk-maven-parent</artifactId>
+        <version>2.0.0</version>
+    </parent>
+
+    <artifactId>maven-extension-parent</artifactId>
+
+    <packaging>pom</packaging>
+
+    <name>maven-extension-parent</name>
+    <description>maven extension parent</description>
+    <url>http://www.sikejava.com</url>
+
+    <dependencies>
+        <!-- maven-core -->
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-core</artifactId>
+        </dependency>
+        <!-- plexus-component-annotations -->
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus-component-annotations</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.plexus</groupId>
+                <artifactId>plexus-component-metadata</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
